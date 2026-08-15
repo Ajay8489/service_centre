@@ -213,7 +213,7 @@
 
     /* About Us Box Style */
     .about-box {
-        background-color: #222222; /* Changed About Us background to dark/black so white text is readable */
+        background-color: var(--secondary-color); /* Reverted background to secondary warm tint */
         padding: 2.5rem;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.05);
@@ -224,7 +224,7 @@
         max-width: 800px;
         margin: 0 auto;
         font-size: 1.1rem;
-        color: #ffffff; /* About Us text changed to white */
+        color: #000000; /* Reverted about text to black */
         font-weight: 300;
     }
 
@@ -361,8 +361,8 @@
         text-align: center;
         padding: 3rem 1rem;
     }
-    footer p {
-        color: #000000;
+    footer h2, footer p {
+        color: #ffffff; /* Bottom contact us text changed to white */
         font-weight: 300;
     }
     .social-buttons {
@@ -560,7 +560,7 @@
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
-        <p style="margin-top: 1rem; color: #000000;">&copy; 2026 Mobile Service Center. All rights reserved.</p>
+        <p style="margin-top: 1rem; color: #ffffff;">&copy; 2026 Mobile Service Center. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript for Slideshow, Repeating Scroll Animation, and WhatsApp Form -->
