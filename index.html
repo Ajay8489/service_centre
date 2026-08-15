@@ -142,7 +142,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        color: #ffffff; /* Center image text changed to white */
+        color: #ffffff;
         z-index: 2;
         width: 90%;
         max-width: 800px;
@@ -150,14 +150,14 @@
     .hero-content h2 {
         font-size: 2.8rem;
         font-weight: 400;
-        color: #ffffff; /* Center image heading changed to white */
+        color: #ffffff;
         margin-bottom: 1rem;
         text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
     .hero-content p {
         font-size: 1.2rem;
         font-weight: 300;
-        color: #ffffff; /* Center image paragraph changed to white */
+        color: #ffffff;
         text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
 
@@ -213,7 +213,7 @@
 
     /* About Us Box Style */
     .about-box {
-        background-color: var(--secondary-color); /* Reverted background to secondary warm tint */
+        background-color: var(--secondary-color);
         padding: 2.5rem;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.05);
@@ -224,8 +224,73 @@
         max-width: 800px;
         margin: 0 auto;
         font-size: 1.1rem;
-        color: #000000; /* Reverted about text to black */
+        color: #000000;
         font-weight: 300;
+    }
+
+    /* Brands Section Styles */
+    .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .brand-card {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        padding: 1.5rem 1rem;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .brand-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+        border-color: var(--primary-color);
+    }
+    .brand-card i {
+        font-size: 2.5rem;
+        color: #222;
+        margin-bottom: 0.8rem;
+    }
+    .brand-card h4 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    /* Why Us Section Styles */
+    .why-us-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+    .why-card {
+        background-color: var(--secondary-color);
+        padding: 2rem 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    .why-card:hover {
+        transform: translateY(-4px);
+    }
+    .why-card i {
+        font-size: 2.2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+    .why-card h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: #000000;
+    }
+    .why-card p {
+        font-size: 0.95rem;
+        font-weight: 300;
+        color: #333;
     }
 
     /* Images Gallery */
@@ -362,7 +427,7 @@
         padding: 3rem 1rem;
     }
     footer h2, footer p {
-        color: #ffffff; /* Bottom contact us text changed to white */
+        color: #ffffff;
         font-weight: 300;
     }
     .social-buttons {
@@ -438,6 +503,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#brands">Brands</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#enquiry">Enquiry</a></li>
             <li><a href="#contact">Contact Us</a></li>
@@ -466,8 +532,35 @@
             <div class="about-box">
                 <p class="about-text">At our Mobile Service Center, we specialize in breathing life back into your damaged devices. With expert technicians, state-of-the-art repair tools, and a commitment to using the highest quality parts, we ensure your smartphone functions flawlessly. From shattered screens to complex motherboard repairs, we handle it all with precision and care.</p>
             </div>
+
+            <!-- Why Us Section -->
+            <div style="margin-top: 3rem;">
+                <h3 style="text-align: center; font-size: 1.8rem; font-weight: 400; margin-bottom: 2rem;">Why Choose Us</h3>
+                <div class="why-us-grid">
+                    <div class="why-card reveal">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>90-Day Warranty</h3>
+                        <p>We stand by our repairs with a reliable warranty on all replacement parts.</p>
+                    </div>
+                    <div class="why-card reveal">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Fast Turnaround</h3>
+                        <p>Most common repairs like screens and batteries are fixed in under an hour.</p>
+                    </div>
+                    <div class="why-card reveal">
+                        <i class="fa-solid fa-medal"></i>
+                        <h3>Genuine Parts</h3>
+                        <p>We use top-grade, premium components to ensure peak performance.</p>
+                    </div>
+                    <div class="why-card reveal">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <h3>Expert Technicians</h3>
+                        <p>Skilled professionals equipped with advanced micro-soldering tools.</p>
+                    </div>
+                </div>
+            </div>
             
-            <div class="notes-section reveal">
+            <div class="notes-section reveal" style="margin-top: 3rem;">
                 <h3>Things to Note Before Servicing</h3>
                 <br>
                 <ul class="notes-list">
@@ -513,6 +606,37 @@
                     <i class="fa-solid fa-volume-xmark"></i>
                     <h3>Speaker / Mic Issues</h3>
                     <p>People can't hear you during calls, or no sound playing from media.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Brands Section -->
+        <section id="brands" class="reveal">
+            <h2>Brands We Service</h2>
+            <div class="brands-grid">
+                <div class="brand-card reveal">
+                    <i class="fa-brands fa-apple"></i>
+                    <h4>Apple iPhone</h4>
+                </div>
+                <div class="brand-card reveal">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h4>Samsung</h4>
+                </div>
+                <div class="brand-card reveal">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h4>OnePlus</h4>
+                </div>
+                <div class="brand-card reveal">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <h4>Xiaomi / Redmi</h4>
+                </div>
+                <div class="brand-card reveal">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h4>Realme</h4>
+                </div>
+                <div class="brand-card reveal">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <h4>Vivo & Oppo</h4>
                 </div>
             </div>
         </section>
