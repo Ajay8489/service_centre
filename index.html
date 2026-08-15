@@ -6,16 +6,18 @@
 <title>Mobile Service Center</title>
 <!-- FontAwesome for Social Media Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts for thinner/lighter font option -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
     :root {
         --primary-color: #e69b00; /* Custom Amber/Gold Orange Color */
         --secondary-color: #fff9ed; /* Light Warm Tint */
-        --text-color: #333;
+        --text-color: #000000; /* All text set to black */
         --nav-bg: #000000; /* Black background for Home/About Us navigation bar */
     }
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif;}
     html {scroll-behavior: smooth;}
-    body {color: var(--text-color); background-color: #fff; line-height: 1.6;}
+    body {color: var(--text-color); background-color: #fff; font-weight: 300; line-height: 1.6;}
 
     /* Top Header - Consistent across mobile and desktop */
     header {
@@ -43,6 +45,7 @@
     }
     header h1 {
         font-size: 1.25rem;
+        font-weight: 400;
         margin-bottom: 0;
         white-space: nowrap;
         overflow: hidden;
@@ -62,7 +65,7 @@
     .header-contact a {
         color: white;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 300;
         transition: opacity 0.3s ease;
         display: inline-flex;
         align-items: center;
@@ -90,7 +93,7 @@
     .nav-links a {
         color: white;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 300; /* Thinner font for navigation links */
         font-size: 1.05rem;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -146,12 +149,14 @@
     }
     .hero-content h2 {
         font-size: 2.8rem;
+        font-weight: 400;
         color: white;
         margin-bottom: 1rem;
         text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
     .hero-content p {
         font-size: 1.2rem;
+        font-weight: 300;
         text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
 
@@ -171,7 +176,7 @@
         padding: 0.75rem 1.5rem;
         border-radius: 4px;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 1rem;
         text-transform: uppercase;
         box-shadow: 0 4px 6px rgba(0,0,0,0.3);
@@ -202,6 +207,7 @@
         margin-bottom: 2rem;
         color: var(--primary-color);
         font-size: 2.2rem;
+        font-weight: 400;
     }
 
     /* About Us Box Style */
@@ -217,7 +223,8 @@
         max-width: 800px;
         margin: 0 auto;
         font-size: 1.1rem;
-        color: #555;
+        color: #000000;
+        font-weight: 300;
     }
 
     /* Images Gallery */
@@ -263,6 +270,14 @@
         color: var(--primary-color);
         margin-bottom: 1rem;
     }
+    .complaint-card h3 {
+        color: #000000;
+        font-weight: 500;
+    }
+    .complaint-card p {
+        color: #000000;
+        font-weight: 300;
+    }
 
     /* Important Notes Section */
     .notes-section {
@@ -271,6 +286,10 @@
         border-radius: 8px;
         margin-top: 2rem;
     }
+    .notes-section h3 {
+        color: #000000;
+        font-weight: 500;
+    }
     .notes-list {
         list-style-type: none;
     }
@@ -278,6 +297,8 @@
         margin-bottom: 1rem;
         padding-left: 1.5rem;
         position: relative;
+        color: #000000;
+        font-weight: 300;
     }
     .notes-list li::before {
         content: "✓";
@@ -307,6 +328,11 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         font-size: 1rem;
+        color: #000000;
+        font-weight: 300;
+    }
+    .enquiry-form input::placeholder, .enquiry-form textarea::placeholder {
+        color: #666;
     }
     .enquiry-form button {
         background-color: var(--primary-color);
@@ -315,7 +341,7 @@
         border: none;
         border-radius: 4px;
         font-size: 1.1rem;
-        font-weight: 700;
+        font-weight: 400;
         cursor: pointer;
         transition: background-color 0.3s ease;
         display: flex;
@@ -333,6 +359,10 @@
         color: white;
         text-align: center;
         padding: 3rem 1rem;
+    }
+    footer p {
+        color: #ffffff;
+        font-weight: 300;
     }
     .social-buttons {
         display: flex;
