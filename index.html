@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
     :root {
-        --primary-color: #ffcc00; /* Vibrant Thick Yellow */
-        --secondary-color: #fffae6; /* Light Warm Yellowish Tint */
+        --primary-color: #ff6600; /* Vibrant Orange */
+        --secondary-color: #fff3ed; /* Light Warm Orange Tint */
         --text-color: #333;
-        --nav-bg: #ffcc00;
+        --nav-bg: #ff6600;
     }
     * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     html {scroll-behavior: smooth;}
@@ -20,7 +20,7 @@
     /* Top Header - Consistent across mobile and desktop */
     header {
         background-color: var(--primary-color);
-        color: #222;
+        color: white;
         padding: 0.8rem 1.5rem;
         display: flex;
         align-items: center;
@@ -47,7 +47,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        color: #222;
+        color: white;
     }
 
     /* Header Contact Info (Top Right) */
@@ -60,7 +60,7 @@
         flex-shrink: 0;
     }
     .header-contact a {
-        color: #222;
+        color: white;
         text-decoration: none;
         font-weight: 600;
         transition: opacity 0.3s ease;
@@ -70,7 +70,7 @@
         white-space: nowrap;
     }
     .header-contact a:hover {
-        opacity: 0.7;
+        opacity: 0.8;
     }
 
     /* Navigation Bar placed below the header */
@@ -88,7 +88,7 @@
         flex-wrap: wrap;
     }
     .nav-links a {
-        color: #222;
+        color: white;
         text-decoration: none;
         font-weight: 700;
         font-size: 1.05rem;
@@ -97,7 +97,7 @@
         transition: color 0.3s ease;
     }
     .nav-links a:hover {
-        color: #fff;
+        color: #ffe6d5;
     }
 
     /* Hero Slideshow Section with Zoom Animation */
@@ -167,7 +167,7 @@
     }
     .hero-btn {
         background-color: var(--primary-color);
-        color: #222;
+        color: white;
         padding: 0.75rem 1.5rem;
         border-radius: 4px;
         text-decoration: none;
@@ -178,7 +178,7 @@
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
     .hero-btn:hover {
-        background-color: #e6b800;
+        background-color: #e55c00;
         transform: translateY(-2px);
     }
 
@@ -200,7 +200,7 @@
     section h2 {
         text-align: center;
         margin-bottom: 2rem;
-        color: #b89700;
+        color: var(--primary-color);
         font-size: 2.2rem;
     }
 
@@ -260,7 +260,7 @@
     }
     .complaint-card i {
         font-size: 2.5rem;
-        color: #b89700;
+        color: var(--primary-color);
         margin-bottom: 1rem;
     }
 
@@ -281,7 +281,7 @@
     }
     .notes-list li::before {
         content: "✓";
-        color: #b89700;
+        color: var(--primary-color);
         position: absolute;
         left: 0;
         font-weight: bold;
@@ -310,7 +310,7 @@
     }
     .enquiry-form button {
         background-color: var(--primary-color);
-        color: #222;
+        color: white;
         padding: 1rem;
         border: none;
         border-radius: 4px;
@@ -324,7 +324,7 @@
         gap: 10px;
     }
     .enquiry-form button:hover {
-        background-color: #e6b800;
+        background-color: #e55c00;
     }
 
     /* Footer & Social Buttons (Contact Us) */
