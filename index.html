@@ -161,7 +161,7 @@
         text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
 
-    /* Slideshow Bottom Action Buttons */
+    /* Slideshow Bottom Action Buttons (Curved / Pill Shape) */
     .hero-buttons {
         position: absolute;
         bottom: 35px;
@@ -174,10 +174,10 @@
     .hero-btn {
         background-color: var(--primary-color);
         color: #000000;
-        padding: 0.75rem 1.5rem;
-        border-radius: 4px;
+        padding: 0.75rem 2rem;
+        border-radius: 50px; /* Fully curvey/pill shape */
         text-decoration: none;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1rem;
         text-transform: uppercase;
         box-shadow: 0 4px 6px rgba(0,0,0,0.3);
@@ -392,10 +392,14 @@
         width: 100%;
         padding: 0.8rem;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 20px; /* Curved inputs */
         font-size: 1rem;
         color: #000000;
         font-weight: 300;
+        padding-left: 1.2rem;
+    }
+    .enquiry-form textarea {
+        border-radius: 15px;
     }
     .enquiry-form input::placeholder, .enquiry-form textarea::placeholder {
         color: #666;
@@ -405,11 +409,11 @@
         color: #ffffff; /* White text for contrast */
         padding: 1rem;
         border: none;
-        border-radius: 4px;
+        border-radius: 50px; /* Curved pill-shaped WhatsApp submit button */
         font-size: 1.1rem;
-        font-weight: 400;
+        font-weight: 500;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.2s ease;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -417,6 +421,7 @@
     }
     .enquiry-form button:hover {
         background-color: #1EBE5D; /* Darker WhatsApp Green on hover */
+        transform: translateY(-2px);
     }
 
     /* Footer & Social Buttons (Contact Us) */
@@ -488,7 +493,7 @@
     <!-- Thin Top Header Section -->
     <header>
         <div class="header-left">
-            <img src="s5.png" alt="Mobile Service Center Logo" class="header-logo">
+            <img src="" alt="Mobile Service Center Logo" class="header-logo">
             <h1>Mobile Service Center</h1>
         </div>
         <div class="header-contact">
